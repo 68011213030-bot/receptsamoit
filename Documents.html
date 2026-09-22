@@ -1,0 +1,5 @@
+<template id="tpl-documents">
+<div class="page"><div class="page-head"><div><h2>ระบบรับ–ส่งเอกสาร</h2><p>จัดการ Incoming / Outgoing / Pending / History</p></div><div><button class="primary" onclick="documentForm('IN')">รับเอกสาร</button> <button class="secondary" onclick="documentForm('OUT')">ส่งเอกสาร</button></div></div>
+<div class="tabs"><button onclick="loadDocuments('IN')">Incoming</button><button onclick="loadDocuments('OUT')">Outgoing</button><button onclick="loadDocuments('')">ทั้งหมด</button></div>
+<div class="card table-wrap"><table><thead><tr><th>ID</th><th>เรื่อง</th><th>ผู้ติดต่อ</th><th>กำหนด</th><th>สถานะ</th><th></th></tr></thead><tbody id="documentsBody"></tbody></table></div></div>
+</template>

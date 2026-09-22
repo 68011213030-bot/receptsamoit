@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<base target="_top">
+<?!= include('Styles'); ?>
+</head>
+<body>
+<div id="app">
+  <div id="loginView"><?!= include('Login'); ?></div>
+  <div id="shell" class="hidden">
+    <?!= include('Sidebar'); ?>
+    <main class="main">
+      <header class="topbar">
+        <button class="iconbtn" onclick="toggleSidebar()" aria-label="เมนู">☰</button>
+        <div class="searchbox"><input id="globalSearch" placeholder="ค้นหาเอกสาร พัสดุ ของหาย กิจกรรม หรือประกาศ" onkeydown="if(event.key==='Enter')doSearch()"></div>
+        <div class="top-actions"><button class="iconbtn" onclick="loadNotifications()">Notifications</button><button class="user-chip" onclick="showPage('admin')"><span id="userName">Admin</span></button></div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+</div>
+<?!= include('Dashboard'); ?><?!= include('Documents'); ?><?!= include('Parcels'); ?><?!= include('LostFound'); ?><?!= include('Calendar'); ?><?!= include('Announcements'); ?><?!= include('Email'); ?><?!= include('Reports'); ?><?!= include('Admin'); ?><?!= include('Scripts'); ?>
+</body>
+</html>

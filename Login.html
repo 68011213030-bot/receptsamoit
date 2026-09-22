@@ -1,0 +1,14 @@
+<div class="login-wrap">
+  <div class="login-card">
+    <img id="loginLogo" class="logo" src="https://i.postimg.cc/4NpRDfX4/CMDCS.png">
+    <h1>Reception System</h1><p>ระบบศูนย์กลางงาน Reception และเลขานุการ</p>
+    <form onsubmit="login(event)">
+      <label>Email</label><input id="email" type="email" required value="68011213030@msu.ac.th">
+      <label>Password</label><input id="password" type="password" required>
+      <button class="primary full">เข้าสู่ระบบ</button>
+    </form>
+    <div class="divider">หรือ</div>
+    <button class="secondary full" onclick="googleLogin()">เข้าสู่ระบบด้วย Google Account</button>
+    <small>ระบบตรวจสอบสิทธิ์จากฐานข้อมูล ADMINS ฝั่ง Server</small>
+  </div>
+</div>
